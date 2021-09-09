@@ -1,9 +1,14 @@
-/*
-COLORS
-Light blue: #B7F1F8; Light pink: 
-Blue: #7CEAF7; Pink: #d63384
-Dark blue: #2EB6C3; Dark Pink: #561435
-*/
+
+$color-primary: #7CEAF7;
+$color-primary-light: #B7F1F8;
+$color-primary-dark: #2EB6C3;
+
+$color-secondary: #d63384;
+$color-secondary-light: #f7d6e6;
+$color-secondary-dark: #561435;
+
+$color-gray: #6d6d6d;
+$color-white: #FFFFFF;
 
 *, *::after, *::before {
     margin: 0;
@@ -20,7 +25,7 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: #6d6d6d;
+    color: $color-gray;
     box-sizing: border-box;
 }
 
@@ -53,11 +58,11 @@ h1, h2, h3, h4, h5, h6{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    border-bottom: 0.1rem solid white;
+    border-bottom: 0.1rem solid $color-white;
 }
 
 .hero-title{
-    color: #FFF;
+    color: $color-white;
 
     backface-visibility: hidden;
 }
