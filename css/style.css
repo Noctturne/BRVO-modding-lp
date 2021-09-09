@@ -19,10 +19,42 @@ body {
     color: #6d6d6d;
 }
 
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", sans-serif;
+}
+
 .site-header{
     height: 95vh;
     background-image: url(../images/bg/bg-blue.png);
     background-size: cover;
     background-position: top;
     clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 90%, 0 65%);
+}
+
+.logo-box{
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.logo{
+    height: 55px;
+}
+
+.text-box{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-title{
+    color: #FFF;
+}
+
+.display{
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -5px;
 }
