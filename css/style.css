@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Montserrat", sans-serif;
 }
 
+/* -- HEADER -- */
 .site-header{
     height: 95vh;
     background-image: url(../images/bg/bg-blue.png);
@@ -50,11 +51,30 @@ h1, h2, h3, h4, h5, h6{
 
 .hero-title{
     color: #FFF;
+    backface-visibility: hidden;
 }
 
 .display{
     display: block;
     font-size: 40px;
     font-weight: 700;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
+
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+/* -- ANIMATIONS -- */
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    85%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }
