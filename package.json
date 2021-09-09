@@ -1,0 +1,23 @@
+{
+  "name": "brvo-modding-lp",
+  "version": "1.0.0",
+  "description": "Landing page for BRVO Modding",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Noctturne/BRVO-modding-lp.git"
+  },
+  "author": "BRVO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Noctturne/BRVO-modding-lp/issues"
+  },
+  "homepage": "https://github.com/Noctturne/BRVO-modding-lp#readme",
+  "devDependencies": {
+    "sass": "^1.39.0"
+  },
+  "dependencies": {}
+}
