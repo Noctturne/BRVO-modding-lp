@@ -1,0 +1,17 @@
+
+
+.hero-title{
+    color: $color-white;
+    backface-visibility: hidden;
+
+    &--display{
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: -0.3rem;
+    
+        animation: moveInLeft;
+        animation-duration: 1s;
+        animation-delay: 1s;
+    }
+}

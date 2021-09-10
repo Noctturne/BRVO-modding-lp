@@ -1,101 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-$color-primary: #7CEAF7;
-$color-primary-light: #B7F1F8;
-$color-primary-dark: #2EB6C3;
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-$color-secondary: #d63384;
-$color-secondary-light: #f7d6e6;
-$color-secondary-dark: #561435;
+@import "components/headings";
 
-$color-gray: #6d6d6d;
-$color-white: #FFFFFF;
-$color-black: #000;
+@import "layout/header";
 
-*, *::after, *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    font-size: 62.5%
-}
-
-body {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.6;
-    color: $color-gray;
-    box-sizing: border-box;
-}
-
-h1, h2, h3, h4, h5, h6{
-    font-family: "Montserrat", sans-serif;
-}
-
-/* -- HEADER -- */
-.site-header{
-    height: 95vh;
-    background-image: url(../images/bg/bg-blue.png);
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 90%, 0 65%);
-
-    &__logo-box{
-        position: absolute;
-        top: 3.5rem;
-        left: 4rem;
-    }
-
-    &__logo{
-        height: 5.5rem;
-    }
-    
-    &__text-box{
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        border-bottom: 0.1rem solid $color-white;
-    }
-}
+@import "pages/home";
 
 
 
 
-.hero-title{
-    color: $color-white;
-    backface-visibility: hidden;
-
-    &--display{
-        display: block;
-        font-size: 4rem;
-        font-weight: 700;
-        letter-spacing: -0.3rem;
-    
-        animation: moveInLeft;
-        animation-duration: 1s;
-        animation-delay: 1s;
-    }
-}
 
 
 
-/* -- ANIMATIONS -- */
-@keyframes moveInLeft {
-    0%{
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-    85%{
-        transform: translateX(1rem);
-    }
-    100%{
-        opacity: 1;
-        transform: translate(0);
-    }
-}
+
 
 
