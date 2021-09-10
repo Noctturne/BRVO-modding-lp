@@ -14,3 +14,28 @@
         transform: skewY(7deg);
     }
 }
+
+.section-deal-of-the-week{
+    padding: 25rem 0 50rem 0;
+    position: relative;
+}
+
+.deal-of-the-week__title{
+    &--display{
+        font-size: 6rem;
+        font-weight: 700;
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.deal-of-the-weak__box-image{
+    position: relative;
+
+    &__image{
+        width: 75%;
+    }
+}
+
