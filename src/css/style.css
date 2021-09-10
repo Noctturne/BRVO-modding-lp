@@ -82,12 +82,52 @@ body {
   text-align: center;
 }
 
+/* PADDINGS  */
+.p2 {
+  padding: 2rem;
+}
+
+/* MARGINS */
+.m2 {
+  margin: 2rem;
+}
+
 .mb-2 {
   margin-bottom: 2rem;
 }
 
 .mb-8 {
   margin-bottom: 8rem;
+}
+
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 48%;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 12rem;
+}
+.composition__photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2.5rem 3rem rgba(0, 0, 0, 0.5);
+  z-index: 20;
 }
 
 .btn {
