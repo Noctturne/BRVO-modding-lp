@@ -73,7 +73,7 @@ body {
 
 .text-gradient {
   display: inline-block;
-  background-image: linear-gradient(to right, #B7F1F8, #2EB6C3);
+  background-image: linear-gradient(to right, #FB5C9F, #AA0249);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -116,14 +116,14 @@ body {
 }
 
 .btn-outline-secondary {
-  color: #561435;
-  border: 0.1rem solid #561435;
+  color: #AA0249;
+  border: 0.1rem solid #AA0249;
 }
 .btn-outline-secondary:link, .btn-outline-secondary:visited {
-  color: #561435;
+  color: #AA0249;
 }
 .btn-outline-secondary:hover {
-  background-color: #561435;
+  background-color: #AA0249;
   color: #FFFFFF;
 }
 
@@ -179,13 +179,13 @@ body {
 }
 
 .link-secondary {
-  color: #d63384;
+  color: #ff1276;
 }
 .link-secondary:link, .link-secondary:visited {
-  color: #d63384;
+  color: #ff1276;
 }
 .link-secondary:hover {
-  color: #561435;
+  color: #AA0249;
 }
 
 .row {
@@ -228,7 +228,7 @@ body {
 /* -- HEADER -- */
 .site-header {
   height: 95vh;
-  background-image: url(../images/bg/bg-blue.png);
+  background-image: url(../images/bg/bg-light-blue.png);
   background-size: cover;
   background-position: top;
   clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 90%, 0 65%);
@@ -257,7 +257,7 @@ body {
 
 .section-latest-posts {
   padding: 20rem 0;
-  background-image: url(../images/bg/bg-blue.png);
+  background-image: url(../images/bg/bg-light-blue.png);
   background-size: cover;
   transform: skewY(-7deg);
 }
