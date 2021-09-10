@@ -5,21 +5,22 @@ h1, h2, h3, h4 {
   font-weight: 700;
 }
 
+/* FONT SIZES */
 /* HEADERS FONT SIZE */
 h1 {
   font-size: 2em;
 }
 
 h2 {
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 h3 {
-  font-size: 1.17em;
+  font-size: 1.4em;
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 /* -- ANIMATIONS -- */
@@ -81,8 +82,35 @@ body {
   text-align: center;
 }
 
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
 .mb-8 {
   margin-bottom: 8rem;
+}
+
+.btn {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.6rem 1.6rem;
+  display: inline-block;
+  border-radius: 0.2rem;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.btn-outline-secondary {
+  color: #561435;
+  border: 0.1rem solid #561435;
+}
+.btn-outline-secondary:link, .btn-outline-secondary:visited {
+  color: #561435;
+}
+.btn-outline-secondary:hover {
+  background-color: #561435;
+  color: #FFFFFF;
 }
 
 .row {

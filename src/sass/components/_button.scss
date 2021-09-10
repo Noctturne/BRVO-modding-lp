@@ -1,0 +1,25 @@
+.btn {
+    font-size: $default-font-size;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.6rem 1.6rem;
+    display: inline-block;
+    border-radius: 0.2rem;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn-outline-secondary{
+    color: $color-secondary-dark;
+    border: 0.1rem solid $color-secondary-dark;
+
+    &:link,
+    &:visited {
+        color: $color-secondary-dark;
+    }
+
+    &:hover{
+        background-color: $color-secondary-dark;
+        color: $color-white;
+    }
+}
