@@ -29,17 +29,14 @@ h1, h2, h3, h4, h5, h6 {
   background-position: top;
   clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 90%, 0 65%);
 }
-
 .site-header__logo-box {
   position: absolute;
   top: 3.5rem;
   left: 4rem;
 }
-
 .site-header__logo {
   height: 5.5rem;
 }
-
 .site-header__text-box {
   position: absolute;
   top: 45%;
@@ -53,7 +50,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   backface-visibility: hidden;
 }
-
 .hero-title--display {
   display: block;
   font-size: 4rem;

@@ -9,6 +9,7 @@ $color-secondary-dark: #561435;
 
 $color-gray: #6d6d6d;
 $color-white: #FFFFFF;
+$color-black: #000;
 
 *, *::after, *::before {
     margin: 0;
@@ -40,43 +41,47 @@ h1, h2, h3, h4, h5, h6{
     background-size: cover;
     background-position: top;
     clip-path: polygon(0% 0%, 100% 0, 100% 50%, 100% 90%, 0 65%);
+
+    &__logo-box{
+        position: absolute;
+        top: 3.5rem;
+        left: 4rem;
+    }
+
+    &__logo{
+        height: 5.5rem;
+    }
+    
+    &__text-box{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border-bottom: 0.1rem solid $color-white;
+    }
 }
 
-.site-header__logo-box{
-    position: absolute;
-    top: 3.5rem;
-    left: 4rem;
-}
 
-.site-header__logo{
-    height: 5.5rem;
-}
 
-.site-header__text-box{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    border-bottom: 0.1rem solid $color-white;
-}
 
 .hero-title{
     color: $color-white;
-
     backface-visibility: hidden;
+
+    &--display{
+        display: block;
+        font-size: 4rem;
+        font-weight: 700;
+        letter-spacing: -0.3rem;
+    
+        animation: moveInLeft;
+        animation-duration: 1s;
+        animation-delay: 1s;
+    }
 }
 
-.hero-title--display{
-    display: block;
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: -0.3rem;
 
-    animation: moveInLeft;
-    animation-duration: 1s;
-    animation-delay: 1s;
-}
 
 /* -- ANIMATIONS -- */
 @keyframes moveInLeft {
