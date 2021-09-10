@@ -1,0 +1,10 @@
+.text-gradient{
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.text-center{ text-align: center; }
+
+.mb-8{ margin-bottom: 8rem; }
