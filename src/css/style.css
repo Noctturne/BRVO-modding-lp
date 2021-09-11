@@ -198,6 +198,7 @@ body {
 .navbar__button {
   background-color: #FFFFFF;
   color: #ff1276;
+  text-align: center;
   height: 5rem;
   width: 5rem;
   position: fixed;
@@ -206,6 +207,7 @@ body {
   border-radius: 50%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
   z-index: 2000;
+  cursor: pointer;
 }
 .navbar__background {
   height: 4rem;
@@ -253,6 +255,39 @@ body {
 .navbar__checkbox:checked ~ .navbar__nav {
   opacity: 1;
   width: 100%;
+}
+.navbar__icon {
+  position: relative;
+  margin-top: 2.2rem;
+}
+.navbar__icon, .navbar__icon::before, .navbar__icon::after {
+  width: 2.5rem;
+  height: 3px;
+  background-color: #000;
+  display: inline-block;
+}
+.navbar__icon::before, .navbar__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.navbar__icon::before {
+  top: -0.7rem;
+}
+.navbar__icon::after {
+  top: 0.7rem;
+}
+.navbar__checkbox:checked + .navbar__button .navbar__icon {
+  background-color: transparent;
+}
+.navbar__checkbox:checked + .navbar__button .navbar__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.navbar__checkbox:checked + .navbar__button .navbar__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
 }
 
 .row {
@@ -302,7 +337,7 @@ body {
 }
 .site-header__logo-box {
   position: absolute;
-  top: 3.5rem;
+  top: 5.5rem;
   left: 4rem;
 }
 .site-header__logo {
