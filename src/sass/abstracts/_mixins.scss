@@ -21,9 +21,11 @@
         - tab-port
         - tab-land
         - large-desktop
-*/
-// 1em = 16px
 
+    ORDER: base + grid
+*/
+
+// 1em = 16px
 @mixin responsive($breakpoint) {
     @if $breakpoint == mobile {
         @media (max-width: 37.5em) { @content };    // 600px

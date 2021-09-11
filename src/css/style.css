@@ -12,6 +12,8 @@
         - tab-port
         - tab-land
         - large-desktop
+
+    ORDER: base + grid
 */
 /* COLORS */
 /* TYPOGRAPHY */
@@ -327,6 +329,16 @@ body {
 .row:not(:last-child) {
   margin-bottom: 8rem;
 }
+@media (max-width: 56.23em) {
+  .row:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 56.23em) {
+  .row {
+    max-width: 50rem;
+  }
+}
 .row::after {
   content: "";
   display: table;
@@ -337,6 +349,17 @@ body {
 }
 .row [class^=col-]:not(:last-child) {
   margin-right: 3.5rem;
+}
+@media (max-width: 56.23em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 56.23em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
 }
 .row .col-1-of-2 {
   width: calc((100% - 3.5rem) / 2);

@@ -4,8 +4,15 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include responsive(tab-port){
+            margin-bottom: $gutter-vertical-sm;
+        }
     }
-    
+    // Change row max width in md devices
+    @include responsive(tab-port){
+        max-width: 50rem;
+    }
 
     @include clearfix;
 
@@ -14,6 +21,17 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            // Remove gutters and adding a margin rows
+            @include responsive(tab-port){
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-sm;
+            }
+        }
+
+        // Convert col to row when max-width = 900
+        @include responsive(tab-port){
+            width: 100% !important;
         }
     }
 
