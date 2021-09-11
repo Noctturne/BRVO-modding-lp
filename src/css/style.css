@@ -1,3 +1,18 @@
+/* -- MEDIA QUERIES -- */
+/*
+
+    0 - 600px: mobile
+    600px - 900px: tablet portrait
+    900px - 1200px: tablet landscape
+    1200px - 1800px: Desktop (Desktop First)
+    1800++: Large devices
+
+    $breakpoint
+        - mobile
+        - tab-port
+        - tab-land
+        - large-desktop
+*/
 /* COLORS */
 /* TYPOGRAPHY */
 h1, h2, h3, h4 {
@@ -46,6 +61,21 @@ h2 {
 /* Defines what 1rem is */
 html {
   font-size: 62.5%;
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.23em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
