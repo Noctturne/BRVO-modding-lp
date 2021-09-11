@@ -1,0 +1,59 @@
+.navbar {
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        background-color: $color-white;
+        color:$color-secondary ;
+        height: 5rem;
+        width: 5rem;
+        position: fixed;
+        top: 6rem;
+        right: 5rem;
+        border-radius: 50%;
+        z-index: 2000;
+    }
+
+    &__background {
+        height: 4rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 6.5rem;
+        right: 5.5rem;
+        background-image: radial-gradient($color-secondary-light, $color-secondary-dark);
+        z-index: 1000;
+        transform: scale(100);
+    }
+
+    &__nav {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+    }
+
+    &__list {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: center;
+    }
+
+    &__item {
+        margin: 1rem;
+    }
+
+    &__link {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
